@@ -1,9 +1,10 @@
+import {Refine} from "./core/components";
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <Refine>
+
+    </Refine>
   );
 };
 
