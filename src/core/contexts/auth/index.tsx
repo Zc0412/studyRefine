@@ -1,4 +1,4 @@
-import React, {createContext, PropsWithChildren} from 'react';
+import React, {createContext, PropsWithChildren, useContext} from 'react';
 import {IAuthContext} from "./types.ts";
 
 const AuthBindingsContext = createContext<Partial<IAuthContext>>({})
@@ -111,3 +111,8 @@ export const AuthBindingsContextProvider: React.FC<PropsWithChildren<IAuthContex
         </AuthBindingsContext.Provider>
     );
 };
+
+export const useAuthBindingsContext = ()=>{
+  const context =  useContext(AuthBindingsContext);
+  return context;
+}

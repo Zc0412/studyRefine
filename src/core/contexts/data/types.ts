@@ -1,3 +1,5 @@
+export type BaseKey = string | number;
+
 export type RefineError = HttpError;
 
 export interface HttpError extends Record<string, any> {
