@@ -71,6 +71,7 @@ export const authProvider: AuthProvider = {
         };
     },
     getPermissions: async (params) => {
+        console.log(params)
         if (params) {
             // do some logic like for example you can get roles for specific tenant
             return ["admin"];
