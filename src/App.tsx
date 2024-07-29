@@ -4,7 +4,9 @@ import Test from "./Test.tsx";
 
 const App = () => {
     return (
-        <Refine authProvider={authProvider}>
+        <Refine
+            authProvider={authProvider}
+        >
             <Test/>
         </Refine>
     );
